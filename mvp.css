@@ -541,4 +541,9 @@ img.people {
     border-radius: 4px;
     padding: 5px;
     width: 150px;
+    margin-top: 30px;
   }
+
+ul.people {
+    list-style-type: none;
+}
