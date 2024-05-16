@@ -536,7 +536,7 @@ blockquote footer {
     border-radius: 10px;
 }
 
-img#people {
+img.people {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
