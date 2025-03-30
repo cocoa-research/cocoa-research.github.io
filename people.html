@@ -1,200 +1,149 @@
-<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="icon" href="https://via.placeholder.com/70x70">
-    <link rel="stylesheet" href="./mvp.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="COCOA Team Page">
+  <title>COCOA Team</title>
 
-    <meta charset="utf-8">
-    <meta name="description" content="My description">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./mvp.css">
+  <link rel="icon" href="https://via.placeholder.com/70x70">
 
-    <title>COCOA</title>
+  <style>
+    body {
+      background-color: #fefae0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #006d77;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    a.person-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      padding: 1em;
+      border-radius: 16px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    a.person-link:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    a.person-link img.people {
+      border-radius: 12px;
+      width: 100%;
+      height: auto;
+      transition: transform 0.2s ease;
+    }
+
+    a.person-link:hover img.people {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #edf6f9;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 1rem;
+      color: #555;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/"><img alt="Logo" src="cocoa-logo_color.png" height="250"></a>
-            <section>
-                <figure>
-                        <img alt="nextgenlogo" width="250" src="EN_Funded_by_the_European_Union_RGB_POS.png">
-                </figure>
-            </section>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="people.html">Team</a></li>
-                <li><a href="projectprogress.html">Project Progress</a></li>
-                <li><a href="results.html">Publications</a></li>
-                <li><a href="outreach.html">Research Dissemination</a></li>
-            </ul>
-        </nav>
-        <!--h1>Page Heading with <i>Italics</i> and <u>Underline</u></h1>
-        <p>Page Subheading with <mark>highlighting</mark></p>
-        <br>
-        <p><a href="#"><i>Italic Link Button</i></a><a href="#"><b>Bold Link Button &rarr;</b></a></p-->
-    </header>
-    <main>
-        <!--hr>
-        <section id="section-1">
-            <header>
-                <h2>Section Heading</h2>
-                <p>Section Subheading</p>
-            </header>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content*</p>
-                <p><small>*with small content</small></p>
-            </aside>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content <sup>with notification</sup></p>
-            </aside>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content</p>
-            </aside>
-        </section>
-        <hr>
-        <section>
-            <blockquote>
-                "Quote"
-                <footer><i>- Attribution</i></footer>
-            </blockquote>
-        </section>
-        <hr>
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Col A</th>
-                        <th>Col B</th>
-                        <th>Col C</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>Row 1</td>
-                    <td>Cell A1</td>
-                    <td>Cell B1</td>
-                    <td>Cell C1</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>Cell A2</td>
-                    <td>Cell B2</td>
-                    <td>Cell C2</td>
-                </tr>
-            </table>
-        </section>
-        <hr-->
+  <header>
+    <nav>
+      <a href="index.html"><img alt="Logo" src="cocoa-logo_color.png" height="120"></a>
+      <section>
+        <figure>
+          <img alt="EU Logo" width="200" src="EN_Funded_by_the_European_Union_RGB_POS.png">
+        </figure>
+      </section>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="people.html">Team</a></li>
+        <li><a href="projectprogress.html">Project Progress</a></li>
+        <li><a href="results.html">Publications</a></li>
+        <li><a href="outreach.html">Research Dissemination</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <article>
-            <h2>People</h2>
-            <p></p>
-            <!--aside>
-                <p>Article callout</p>
-            </aside-->
-            <ul class="people">
-                <li>
-                    <figure>
-                        <img class="people" alt="Maurizio" src="images/Maurizio.jpg">
-                        <!--figcaption><i>Image caption</i></figcaption-->
-                    </figure>
-                    <b>Maurizio Mancini - Department of Computer Science, Sapienza University of Rome</b><br>
-                    Maurizio Mancini is an Associate Professor at the Department of Computer Science, Sapienza
-                    University of Rome. Earlier, he was Lecturer at the School of Computer Science and IT, University College Cork. He earned his
-                    PhD in Computer Science (HCI) in February 2008, at the University of Paris 8. He conducts research in the field of Multimodal
-                    Interfaces and Affective/Social Computing, in which he investigates computer interfaces having bodies and nonverbal capabilities,
-                    enabling the user to emotionally and socially interact with the machine.</li>
-                <li>
-                    <figure>
-                        <img class="people" alt="Radoslaw" src="images/Radek.jpg">
-                        <!--figcaption><i>Image caption</i></figcaption-->
-                    </figure>
-                    <b>Radoslaw Niewiadomski - DIBRIS, University of Genoa</b><br>Radoslaw
-                    Niewiadomski is an Assistant Professor at DIBRIS, University of Genoa
-                    (Italy). His research interests include recognition of emotions, nonverbal behavior synthesis and interaction with embodied
-                    conversational agents and social robots. He is co-PI of COCOA project aiming to investigate human-human interactions in a
-                    commensal setting and to develop artificial commensal companions, and Guest Editor of the Special Research Topic on
-                    “Computational Commensality”.</li>
-                <li><figure>
-                    <img class="people" alt="Selim" src="images/Selim.jpg">
-                    <!--figcaption><i>Image caption</i></figcaption-->
-                    </figure>
-                    <b>Selim Soufargi - Department of Computer Science, Sapienza University of Rome</b><br>
-                    Selim Soufargi is a Ph.D. researcher in computer engineering. He obtained his Ph.D. degree from the university of
-                    Calabria, Rende, Italy. Prior to that, he obtained a master’s degree in communication systems from the university of
-                    Tunis-Manar. His main research interests focus on big data management, data analysis and machine learning. He has
-                    published papers at both national and international levels.</li>
-                <li><figure>
-                    <img class="people" alt="Hunter" src="images/Hunter.jpg">
-                    <!--figcaption><i>Image caption</i></figcaption-->
-                    </figure>
-                    <b>Hunter Fong - DIBRIS, University of Genoa</b><br>Hunter Fong is a post-doctoral researcher with
-                    a background in Psychology, User Experience/Human Factors, and
-                    Applied Statistics.  Her primary research aim is to improve the
-                    human experience: mentally, socially, and physically. She both
-                    researched and taught social, cognitive, and engineering
-                    psychology within academic settings prior to conducting HF and
-                    robotics research at NASA, Johnson Space Center (Houston), and
-                    user experience research within tech (Dell, Meta, & Google).
-                    This blended background has culminated in Hunter combining her
-                    interests and experience on the human-robot commensality project
-                    COCOA at the University of Genoa.</li>
-            </ul>
-            <!--figure>
-                <img alt="Stock photo" src="https://via.placeholder.com/1080x500?text=Amazing+stock+photo">
-                <figcaption><i>Image caption</i></figcaption>
-            </figure-->
-        </article>
+  <main>
+    <h2 style="text-align:center; margin-top: 2rem;">Meet the COCOA Team</h2>
+    <div class="team-grid">
+      <a href="https://orcid.org/0000-0002-9933-8583" target="_blank" class="person-link">
+        <img class="people" alt="Maurizio" src="images/Maurizio.jpg">
+        <h3>Maurizio Mancini</h3>
+        <p><strong>Department of Computer Science, Sapienza University of Rome</strong></p>
+        <p>Maurizio Mancini is an Associate Professor at the Department of Computer Science, Sapienza University of Rome. Earlier, he was Lecturer at the School of Computer Science and IT, University College Cork. He earned his PhD in Computer Science (HCI) in February 2008, at the University of Paris 8. He conducts research in the field of Multimodal Interfaces and Affective/Social Computing, in which he investigates computer interfaces having bodies and nonverbal capabilities, enabling the user to emotionally and socially interact with the machine.</p>
+      </a>
 
-        <!--hr>
-        <div>
-            <details>
-                <summary>Expandable title</summary>
-                <p>Revealed content</p>
-            </details>
-            <details>
-                <summary>Another expandable title</summary>
-                <p>More revealed content</p>
-            </details>
-            <br>
-            <p>Inline <code>code</code> snippets</p>
-            <pre>
-                <code>
-// preformatted code block
-                </code>
-            </pre>
-        </div>
-        <hr>
-        <section>
-            <form>
-                <header>
-                    <h2>Form title</h2>
-                </header>
-                <label for="input1">Input label:</label>
-                <input type="text" id="input1" name="input1" size="20" placeholder="Input1">
-                <label for="select1">Select label:</label>
-                <select id="select1">
-                    <option value="option1">option1</option>
-                    <option value="option2">option2</option>
-                </select>
-                <label for="textarea1">Textarea label:</label>
-                <textarea cols="40" rows="5" id="textarea1"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section-->
-    </main>
-    <footer>
-        <hr>
-        <section>
-            <img alt="nextgenlogo" width="450" src="signaturelogo.png">
-            <small>&copy; 2023-2025 MUR PRIN COCOA Project; Finanziato dall’Unione europea – Next Generation EU; Funded by the European Union – Next Generation EU</small>
-        </section>
-    </footer>
+      <a href="https://radoslawniewiadomski.github.io/index.html" target="_blank" class="person-link">
+        <img class="people" alt="Radoslaw" src="images/Radek.jpg">
+        <h3>Radoslaw Niewiadomski</h3>
+        <p><strong>DIBRIS, University of Genoa</strong></p>
+        <p>Radoslaw Niewiadomski is an Assistant Professor at DIBRIS, University of Genoa (Italy). His research interests include recognition of emotions, nonverbal behavior synthesis and interaction with embodied conversational agents and social robots. He is co-PI of COCOA project aiming to investigate human-human interactions in a commensal setting and to develop artificial commensal companions, and Guest Editor of the Special Research Topic on “Computational Commensality”.</p>
+      </a>
+
+      <a href="https://orcid.org/0009-0000-5476-9403" target="_blank" class="person-link">
+        <img class="people" alt="Selim" src="images/Selim.jpg">
+        <h3>Selim Soufargi</h3>
+        <p><strong>Department of Computer Science, Sapienza University of Rome</strong></p>
+        <p>Selim Soufargi is a Ph.D. researcher in computer engineering. He obtained his Ph.D. degree from the university of Calabria, Rende, Italy. Prior to that, he obtained a master’s degree in communication systems from the university of Tunis-Manar. His main research interests focus on big data management, data analysis and machine learning. He has published papers at both national and international levels.</p>
+      </a>
+
+      <a href="https://orcid.org/0009-0000-0920-7946" target="_blank" class="person-link">
+        <img class="people" alt="Hunter" src="images/Hunter.jpg">
+        <h3>Hunter Fong</h3>
+        <p><strong>DIBRIS, University of Genoa</strong></p>
+        <p>Hunter Fong is a post-doctoral researcher with a background in Psychology, User Experience/Human Factors, and Applied Statistics. Her primary research aim is to improve the human experience: mentally, socially, and physically. She both researched and taught social, cognitive, and engineering psychology within academic settings prior to conducting HF and robotics research at NASA, Johnson Space Center (Houston), and user experience research within tech (Dell, Meta, & Google). This blended background has culminated in Hunter combining her interests and experience on the human-robot commensality project COCOA at the University of Genoa.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <img alt="EU Signature Logo" width="450" src="signaturelogo.png">
+    <small>&copy; 2023-2025 MUR PRIN COCOA Project; Finanziato dall’Unione europea – Next Generation EU; Funded by the European Union – Next Generation EU</small>
+  </footer>
 </body>
 
 </html>
