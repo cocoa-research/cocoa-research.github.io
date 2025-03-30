@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="COCOA Team Page">
-  <title>COCOA Team</title>
+  <meta name="description" content="COCOA Publications">
+  <title>Publications – COCOA</title>
 
   <link rel="stylesheet" href="./mvp.css">
   <link rel="icon" href="https://via.placeholder.com/70x70">
@@ -49,123 +49,51 @@
       color: black;
       padding: 0.25em 0.75em;
       border-radius: 8px;
-      padding: 0.25em 0.75em;
-      border-radius: 8px;
     }
 
     nav ul li a:hover {
       text-shadow: 1px 1px 0 #ffd700, -1px 1px 0 #ffd700, 1px -1px 0 #ffd700, -1px -1px 0 #ffd700;
     }
 
-    .team-heading {
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 2.4rem;
-      color: #2a72c4;
-      font-weight: 600;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      letter-spacing: 0.5px;
-      border-bottom: none;
-      text-transform: none;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-
-    .team-heading.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      padding: 2rem 1rem;
+    main {
       max-width: 1000px;
       margin: 0 auto;
+      padding: 2rem;
     }
 
-    div.person-link {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      padding: 1em;
-      border-radius: 16px;
-      background-color: #ffffff;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    h2.section-heading {
+      text-align: center;
+      color: #2a72c4;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
     }
 
-    div.person-link:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    div.person-link img.people {
+    .pub {
+      background: #ffffff;
       border-radius: 12px;
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-      object-position: top;
-      background-color: #e0e0e0;
-      transition: transform 0.2s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
     }
 
-    div.person-link:hover img.people {
-      transform: scale(1.02);
+    .pub h3 {
+      margin-top: 0;
+      color: #2a72c4;
     }
 
-    .person-link h3 {
-      margin-top: 0.5em;
-    }
-
-    .person-link a {
-      color: inherit;
+    .pub a {
+      color: #2a72c4;
       text-decoration: none;
     }
 
-    .person-link a:hover {
+    .pub a:hover {
       text-decoration: underline;
     }
 
-    .university {
-      display: inline-block;
-      padding: 0.25em 0.6em;
-      border-radius: 12px;
-      background: linear-gradient(to right, #2a72c4, #7a1c1c);
-      color: white !important;
-      font-weight: bold;
-      margin: 0.5em 0;
-      text-decoration: none;
-      transition: color 0.2s ease, text-decoration 0.2s ease;
-      font-weight: bold;
-      margin: 0.5em 0;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0.5em 0;
-      transition: none;
-      font-weight: bold;
-      margin: 0.5em 0;
-    }
-
-    a.person-link:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    a.person-link img.people {
-      border-radius: 12px;
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-      object-position: top;
-      background-color: #e0e0e0;
-      transition: transform 0.2s ease;
-    }
-
-    a.person-link:hover img.people {
-      transform: scale(1.02);
+    .pub img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
     }
 
     footer {
@@ -184,11 +112,7 @@
       margin-top: 1rem;
       color: #ffffff;
     }
-    .university:hover {
-      color: white;
-      text-decoration: underline;
-    }
-</style>
+  </style>
 </head>
 
 <body>
@@ -196,7 +120,7 @@
     <a href="index.html"><img alt="Logo" src="cocoa-logo_color.png" class="logo-main"></a>
     <div class="logo-wrapper">
       <figure>
-        <img alt="EU Logo" src="EN_Funded_by_the_European_Union_RGB_POS.png">
+        <a href="https://nexteugeneration.com" target="_blank"><img alt="EU Logo" src="EN_Funded_by_the_European_Union_RGB_POS.png"></a>
       </figure>
     </div>
   </header>
@@ -212,67 +136,70 @@
   </nav>
 
   <main>
-    <h2 class="team-heading">Meet the COCOA Team</h2>
-    <div class="team-grid">
-      <div class="person-link">
-  <a href="https://orcid.org/0000-0002-9933-8583" target="_blank">
-    <img class="people" alt="Maurizio" src="images/Maurizio.jpg">
-    <h3>Maurizio Mancini</h3>
-  </a>
-  <p><a href="https://www.di.uniroma1.it/" target="_blank" class="university">Department of Computer Science, Sapienza University of Rome</a></p>
-  <p>Maurizio Mancini is an Associate Professor at the Department of Computer Science, Sapienza University of Rome. Earlier, he was Lecturer at the School of Computer Science and IT, University College Cork. He earned his PhD in Computer Science (HCI) in February 2008, at the University of Paris 8. He conducts research in the field of Multimodal Interfaces and Affective/Social Computing, in which he investigates computer interfaces having bodies and nonverbal capabilities, enabling the user to emotionally and socially interact with the machine.</p>
-</div>
+    <h2 class="section-heading">Publications</h2>
 
-      <div class="person-link">
-  <a href="https://radoslawniewiadomski.github.io/index.html" target="_blank">
-    <img class="people" alt="Radoslaw" src="images/Radek.jpg">
-    <h3>Radoslaw Niewiadomski</h3>
-  </a>
-  <p><a href="https://www.dibris.unige.it/" target="_blank" class="university">DIBRIS, University of Genoa</a></p>
-  <p>Radoslaw Niewiadomski is an Assistant Professor at DIBRIS, University of Genoa (Italy). His research interests include recognition of emotions, nonverbal behavior synthesis and interaction with embodied conversational agents and social robots. He is co-PI of COCOA project aiming to investigate human-human interactions in a commensal setting and to develop artificial commensal companions, and Guest Editor of the Special Research Topic on “Computational Commensality”.</p>
-</div>
+    <div class="pub">
+      <h3>A Social Robot Companion for Individuals Eating Alone</h3>
+      <p><strong>Authors:</strong> Selim Soufargi, Hunter Fong, Radoslaw Niewiadomski, Maurizio Mancini</p>
+      <p><strong>Conference:</strong> 30th Annual ACM Conference on Intelligent User Interfaces (IUI), March 24-27, 2025, Cagliari, Italy</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3708557.3716340" target="_blank">Read the paper</a> | <a href="images/posterIUI.pdf" target="_blank">View Poster (PDF)</a> | <a href="https://www.youtube.com/watch?v=2-CovS9vWfU" target="_blank">Watch Video</a></p>
+      <img src="images/IUIRadek.png" alt="Presentation image from IUI" style="max-width: 300px;">
+    </div>
 
-      <div class="person-link">
-  <a href="https://orcid.org/0009-0000-5476-9403" target="_blank">
-    <img class="people" alt="Selim" src="images/Selim1.jpg">
-    <h3>Selim Soufargi</h3>
-  </a>
-  <p><a href="https://www.di.uniroma1.it/en/department" target="_blank" class="university">Department of Computer Science, Sapienza University of Rome</a></p>
-  <p>Selim Soufargi is a Ph.D. researcher in computer engineering. He obtained his Ph.D. degree from the university of Calabria, Rende, Italy. Prior to that, he obtained a master’s degree in communication systems from the university of Tunis-Manar. His main research interests focus on big data management, data analysis and machine learning. He has published papers at both national and international levels.</p>
-</div>
+    <div class="pub">
+      <h3>Automatic Recognition of Commensal Activities in Co-located and Online settings</h3>
+      <p><strong>Authors:</strong> Yazgi, K., Beyan, C., Mancini, M., Niewiadomski, R.</p>
+      <p><strong>Conference:</strong> ICMI Companion 2024, November 4–8, 2024, San Jose, Costa Rica</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3686215.3686219" target="_blank">Read the paper</a> | <a href="images/COFI2024_Kheder.pdf" target="_blank">View Poster (PDF)</a></p>
+    </div>
+    <div class="pub">
+      <h3>Do We Need Artificial Dining Companions? Exploring Human Attitudes Toward Robots in Commensality Settings</h3>
+      <p><strong>Authors:</strong> Hoxha, A., Fong, H., Niewiadomski, R.</p>
+      <p><strong>Conference:</strong> ICMI Companion 2024, November 4–8, San Jose, Costa Rica</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3686215.3686220" target="_blank">Read the paper</a> | <a href="images/COFI2024_Albana.pdf" target="_blank">View Poster (PDF)</a></p>
+    </div>
+  <div class="pub">
+      <h3>Sounding bodies: Exploring sonification to promote physical contact</h3>
+      <p><strong>Authors:</strong> Chiara Gulino, Radoslaw Niewiadomski</p>
+      <p><strong>Conference:</strong> AVI2024, Genova</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3656650.3656749" target="_blank">Read the paper</a></p>
+    </div>
 
-      <div class="person-link">
-  <a href="https://orcid.org/0009-0000-0920-7946" target="_blank">
-    <img class="people" alt="Hunter" src="images/Hunter.jpg">
-    <h3>Hunter Fong</h3>
-  </a>
-  <p><a href="https://dibris.unige.it" target="_blank" class="university">DIBRIS, University of Genoa</a></p>
-  <p>Hunter Fong is a post-doctoral researcher with a background in Psychology, User Experience/Human Factors, and Applied Statistics. Her primary research aim is to improve the human experience: mentally, socially, and physically. She both researched and taught social, cognitive, and engineering psychology within academic settings prior to conducting HF and robotics research at NASA, Johnson Space Center (Houston), and user experience research within tech (Dell, Meta, & Google). This blended background has culminated in Hunter combining her interests and experience on the human-robot commensality project COCOA at the University of Genoa.</p>
-</div>
+    <div class="pub">
+      <h3>Multimodal interactive VR mindfulness experience</h3>
+      <p><strong>Authors:</strong> Maurizio Mancini, Radoslaw Niewiadomski, Giovanna Varni, Andrea Chirico, Tommaso Palombi, Fabio Alivernini, Fabio Lucidi</p>
+      <p><strong>Conference:</strong> AVI2024, Genova</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3656650.3656753" target="_blank">Read the paper</a></p>
+    </div>
+
+    <div class="pub">
+      <h3>First Multimodal Banquet: Exploring Innovative Technology for Commensality and Human-Food Interaction (CoFI2024)</h3>
+      <p><strong>Authors:</strong> Niewiadomski, R., Altarriba Bertran, F., Dawes, C., Obrist, M., Mancini, M.</p>
+      <p><strong>Conference:</strong> ICMI '24, November 4–8, 2024, San Jose, Costa Rica</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3678957.3685762" target="_blank">Read the paper</a></p>
+    </div>
+
+    <div class="pub">
+      <h3>A Virtual Agent as a Commensal Companion</h3>
+      <p><strong>Authors:</strong> Mancini, M., Niewiadomski, R., De Lucia, G., Longobardi, F.M.</p>
+      <p><strong>Conference:</strong> IVA ’24, September 16–19, 2024, Glasgow, United Kingdom</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3652988.3673963" target="_blank">Read the paper</a> | <a href="images/poster_AVI.Conference_2024.pdf" target="_blank">View Poster (PDF)</a></p>
+    </div>
+
+    <div class="pub">
+      <h3>How Do We Perceive the Intensity of Facial Expressions? The PIFE Dataset for Analysis of Perceived Intensity</h3>
+      <p><strong>Authors:</strong> Tiuleneva M., Castano E., Niewiadomski, R.</p>
+      <p><strong>Conference:</strong> ACII 2024, September 15–18, Glasgow, UK</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3656650.3656711" target="_blank">Read the paper</a></p>
     </div>
   </main>
 
   <footer>
-    <img alt="EU Signature Logo" width="450" src="signaturelogo.png">
+    <a href="https://commission.europa.eu/funding-tenders/find-funding/eu-funding-programmes_it" target="_blank">
+      <img alt="EU Signature Logo" width="450" src="signaturelogo.png">
+    </a>
     <small>&copy; 2023-2025 MUR PRIN COCOA Project; Finanziato dall’Unione europea – Next Generation EU; Funded by the European Union – Next Generation EU</small>
   </footer>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const heading = document.querySelector('.team-heading');
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            heading.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
-    observer.observe(heading);
-  });
-</script>
 </body>
 
 </html>
