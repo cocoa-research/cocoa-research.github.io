@@ -1,204 +1,169 @@
-<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="icon" href="https://via.placeholder.com/70x70">
-    <link rel="stylesheet" href="./mvp.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="COCOA Publications">
+  <title>Publications – COCOA</title>
 
-    <meta charset="utf-8">
-    <meta name="description" content="My description">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./mvp.css">
+  <link rel="icon" href="https://via.placeholder.com/70x70">
 
-    <title>COCOA</title>
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    header img.logo-main {
+      height: 250px;
+    }
+
+    .logo-wrapper figure img {
+      width: 250px;
+      margin-top: 1rem;
+    }
+
+    nav {
+      margin-top: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      padding: 0.25em 0.75em;
+      border-radius: 8px;
+    }
+
+    nav ul li a:hover {
+      text-shadow: 1px 1px 0 #ffd700, -1px 1px 0 #ffd700, 1px -1px 0 #ffd700, -1px -1px 0 #ffd700;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h2.section-heading {
+      text-align: center;
+      color: #2a72c4;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .pub {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+    }
+
+    .pub h3 {
+      margin-top: 0;
+      color: #2a72c4;
+    }
+
+    .pub a {
+      color: #2a72c4;
+      text-decoration: none;
+    }
+
+    .pub a:hover {
+      text-decoration: underline;
+    }
+
+    .pub img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #0055a4;
+    }
+
+    footer img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 1rem;
+      color: #ffffff;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/"><img alt="Logo" src="cocoa-logo_color.png" height="250"></a>
-            <section>
-                <figure>
-                        <img alt="nextgenlogo" width="250" src="EN_Funded_by_the_European_Union_RGB_POS.png">
-                </figure>
-            </section>
-            <ul>
-                <li><a href="/">Home</a></li>
-        	<li><a href="people.html">Team</a></li>
-       		<li><a href="projectprogress.html">Project Progress</a></li>
-        	<li><a href="results.html">Publications</a></li>
-        	<li><a href="outreach.html">Research Dissemination</a></li>
-                <!--li><a href="#">Dropdown Menu Item</a>
-                    <ul>
-                        <li><a href="#">Sublink with a long name</a></li>
-                        <li><a href="#">Short sublink</a></li>
-                    </ul>
-                </li-->
-            </ul>
-        </nav>
-        <!--h1>Page Heading with <i>Italics</i> and <u>Underline</u></h1>
-        <p>Page Subheading with <mark>highlighting</mark></p>
-        <br>
-        <p><a href="#"><i>Italic Link Button</i></a><a href="#"><b>Bold Link Button &rarr;</b></a></p-->
-    </header>
-    <main>
-        <!--hr>
-        <section id="section-1">
-            <header>
-                <h2>Section Heading</h2>
-                <p>Section Subheading</p>
-            </header>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content*</p>
-                <p><small>*with small content</small></p>
-            </aside>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content <sup>with notification</sup></p>
-            </aside>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content</p>
-            </aside>
-        </section>
-        <hr>
-        <section>
-            <blockquote>
-                "Quote"
-                <footer><i>- Attribution</i></footer>
-            </blockquote>
-        </section>
-        <hr>
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Col A</th>
-                        <th>Col B</th>
-                        <th>Col C</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>Row 1</td>
-                    <td>Cell A1</td>
-                    <td>Cell B1</td>
-                    <td>Cell C1</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>Cell A2</td>
-                    <td>Cell B2</td>
-                    <td>Cell C2</td>
-                </tr>
-            </table>
-        </section>
-        <hr-->
+  <header>
+    <a href="index.html"><img alt="Logo" src="cocoa-logo_color.png" class="logo-main"></a>
+    <div class="logo-wrapper">
+      <figure>
+        <img alt="EU Logo" src="EN_Funded_by_the_European_Union_RGB_POS.png">
+      </figure>
+    </div>
+  </header>
 
-        <article>
-            <h2>Publications</h2>
-            <ul>
-			    <li>
-				    TITLE: A Social Robot Companion for Individuals Eating Alone<br>
-                    AUTHORS: Selim Soufargi, Hunter Fong, Radoslaw Niewiadomski and Maurizio Mancini<br>
-                    CONFERENCE: 30th Annual ACM Conference on Intelligent User Interfaces (IUI), March 24-27, 2025, Cagliari, Italy <br>
-					PAPER: <a href="https://dl.acm.org/doi/pdf/10.1145/3708557.3716340">https://dl.acm.org/doi/pdf/10.1145/3708557.3716340</a>
-                </li>
-                <li>
-				    TITLE: Sounding bodies: Exploring sonification to promote physical contact<br>
-                    AUTHORS: Chiara Gulino and Radoslaw Niewiadomski<br>
-                    CONFERENCE: AVI2024, GENOVA <br>
-					PAPER: <a href="https://dl.acm.org/doi/pdf/10.1145/3656650.3656749">https://dl.acm.org/doi/pdf/10.1145/3656650.3656749</a>
-                </li>
-                <li>
-				    TITLE: Multimodal interactive VR mindfulness experience<br>
-                    AUTHORS: Maurizio Mancini, Radoslaw Niewiadomski, Giovanna Varni,
-                    Andrea Chirico, Tommaso Palombi, Fabio Alivernini, Fabio Lucidi<br>
-                    CONFERENCE: AVI2024, GENOVA <br>
-					PAPER: <a href="https://dl.acm.org/doi/pdf/10.1145/3656650.3656753">https://dl.acm.org/doi/pdf/10.1145/3656650.3656753</a>
-                </li>
-				<li>
-					TITLE: First Multimodal Banquet: Exploring Innovative Technology for Commensality and Human-Food Interaction (CoFI2024)<br> 
-					AUTHORS: Niewiadomski, R., Altarriba Bertran, F., Dawes, C., Obrist, M., Mancini, M.<br>
-					CONFERENCE: In Proceedings of the 26th International Conference on Multimodal Interaction (ICMI '24), November 4–8, 2024, San Jose, Costa Rica. ACM, New York, NY, USA, 690–693, 2024.<br>
-					PAPER: <a href="https://dl.acm.org/doi/pdf/10.1145/3678957.3685762">https://dl.acm.org/doi/pdf/10.1145/3678957.3685762</a>
-				</li>
-                <li>
-				    TITLE: Automatic Recognition of Commensal Activities in Co-located and Online settings<br>
-                    AUTHORS: Yazgi, K., Beyan, C., Mancini, M., Niewiadomski, R.<br>
-                    CONFERENCE: International Conference on Multimodal Interaction (ICMI Companion 2024), November 4–8, 2024, San Jose, Costa Rica. ACM, New York, NY, USA, 5 pages, 2024<br>
-					PAPER: <a href="https://dl.acm.org/doi/pdf/10.1145/3686215.3686219">https://dl.acm.org/doi/pdf/10.1145/3686215.3686219</a>
-                </li>
-                <li>
-				    TITLE: Do We Need Artificial Dining Companions? Exploring Human Attitudes Toward Robots in Commensality Settings<br>
-                    AUTHORS: Hoxha, A., Fong, H., Niewiadomski, R.<br>
-                    CONFERENCE: International Conference on Multimodal Interaction (ICMI Companion 2024), November 4–8, San Jose, Costa Rica. ACM, New York, NY, USA, 7 pages, 2024<br>
-					PAPER: <a href="https://dl.acm.org/doi/pdf/10.1145/3686215.3686220">https://dl.acm.org/doi/pdf/10.1145/3686215.3686220</a>
-                </li>
-				<li>
-				    TITLE: A Virtual Agent as a Commensal Companion<br>
-                    AUTHORS: Mancini, M., Niewiadomski, R., De Lucia, G., Longobardi, F.M.<br>
-                    CONFERENCE: In Proceedings of ACM International Conference on Intelligent Virtual Agents (IVA ’24), September 16–19, 2024, Glasgow, United Kingdom. ACM, New York, NY, USA, 4 pages, 2024.<br>
-					PAPER: <a href="https://dl.acm.org/doi/pdf/10.1145/3652988.3673963">https://dl.acm.org/doi/pdf/10.1145/3652988.3673963</a>
-                </li>
-                <li>
-				    AUTHORS: Tiuleneva M., Castano E., Niewiadomski, R.<br>
-                    TITLE: How Do We Perceive the Intensity of Facial Expressions? The PIFE Dataset for Analysis of Perceived Intensity<br>
-                    CONFERENCE: Proceedings of 12th International Conference on Affective Computing and Intelligent Interaction (ACII), September 15-18, Glasgow, UK, 2024, pp. 99-106<br>
-					PAPER: <a href="https://dl.acm.org/doi/pdf/10.1145/3656650.3656711">https://dl.acm.org/doi/pdf/10.1145/3656650.3656711</a>
-                </li>
-            </ul>
-        </article>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="people.html">Team</a></li>
+      <li><a href="projectprogress.html">Project Progress</a></li>
+      <li><a href="results.html">Publications</a></li>
+      <li><a href="outreach.html">Research Dissemination</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <h2 class="section-heading">Publications</h2>
 
+    <div class="pub">
+      <h3>A Social Robot Companion for Individuals Eating Alone</h3>
+      <p><strong>Authors:</strong> Selim Soufargi, Hunter Fong, Radoslaw Niewiadomski, Maurizio Mancini</p>
+      <p><strong>Conference:</strong> 30th Annual ACM Conference on Intelligent User Interfaces (IUI), March 24-27, 2025, Cagliari, Italy</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3708557.3716340" target="_blank">Read the paper</a> | <a href="posterIUI.pdf" target="_blank">View Poster (PDF)</a> | <a href="https://www.youtube.com/watch?v=2-CovS9vWfU" target="_blank">Watch Video</a></p>
+      <img src="images/IUIRadek.png" alt="Presentation image from IUI">
+    </div>
 
+    <div class="pub">
+      <h3>Automatic Recognition of Commensal Activities in Co-located and Online settings</h3>
+      <p><strong>Authors:</strong> Yazgi, K., Beyan, C., Mancini, M., Niewiadomski, R.</p>
+      <p><strong>Conference:</strong> ICMI Companion 2024, November 4–8, 2024, San Jose, Costa Rica</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3686215.3686219" target="_blank">Read the paper</a> | <a href="COFI2024_Kheder.pdf" target="_blank">View Poster (PDF)</a></p>
+    </div>
+    <div class="pub">
+      <h3>Do We Need Artificial Dining Companions? Exploring Human Attitudes Toward Robots in Commensality Settings</h3>
+      <p><strong>Authors:</strong> Hoxha, A., Fong, H., Niewiadomski, R.</p>
+      <p><strong>Conference:</strong> ICMI Companion 2024, November 4–8, San Jose, Costa Rica</p>
+      <p><a href="https://dl.acm.org/doi/pdf/10.1145/3686215.3686220" target="_blank">Read the paper</a> | <a href="COFI2024_Albana.pdf" target="_blank">View Poster (PDF)</a></p>
+    </div>
+  </main>
 
-        <!--hr>
-        <div>
-            <details>
-                <summary>Expandable title</summary>
-                <p>Revealed content</p>
-            </details>
-            <details>
-                <summary>Another expandable title</summary>
-                <p>More revealed content</p>
-            </details>
-            <br>
-            <p>Inline <code>code</code> snippets</p>
-            <pre>
-                <code>
-// preformatted code block
-                </code>
-            </pre>
-        </div>
-        <hr>
-        <section>
-            <form>
-                <header>
-                    <h2>Form title</h2>
-                </header>
-                <label for="input1">Input label:</label>
-                <input type="text" id="input1" name="input1" size="20" placeholder="Input1">
-                <label for="select1">Select label:</label>
-                <select id="select1">
-                    <option value="option1">option1</option>
-                    <option value="option2">option2</option>
-                </select>
-                <label for="textarea1">Textarea label:</label>
-                <textarea cols="40" rows="5" id="textarea1"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section-->
-    </main>
-    <footer>
-        <hr>
-        <section>
-            <img alt="nextgenlogo" width="450" src="signaturelogo.png">
-            <small>&copy; 2023-2025 MUR PRIN COCOA Project; Finanziato dall’Unione europea – Next Generation EU; Funded by the European Union – Next Generation EU</small>
-        </section>
-    </footer>
+  <footer>
+    <img alt="EU Signature Logo" width="450" src="signaturelogo.png">
+    <small>&copy; 2023-2025 MUR PRIN COCOA Project; Finanziato dall’Unione europea – Next Generation EU; Funded by the European Union – Next Generation EU</small>
+  </footer>
 </body>
 
 </html>
