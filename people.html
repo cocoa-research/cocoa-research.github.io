@@ -12,15 +12,15 @@
 
   <style>
     body {
-      background-color: #fefae0;
+      background-color: #f0f4f8;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
     header nav {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      flex-wrap: wrap;
+      text-align: center;
     }
 
     nav ul {
@@ -28,23 +28,37 @@
       padding: 0;
       display: flex;
       gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
     }
 
     nav ul li a {
       text-decoration: none;
       font-weight: bold;
-      color: #006d77;
+      color: #003049;
     }
 
     nav ul li a:hover {
       text-decoration: underline;
     }
 
+    header nav a img.logo-main {
+      height: 160px;
+      margin-bottom: 0.5rem;
+    }
+
+    header nav section figure img {
+      width: 180px;
+    }
+
     .team-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     a.person-link {
@@ -66,7 +80,8 @@
     a.person-link img.people {
       border-radius: 12px;
       width: 100%;
-      height: auto;
+      height: 300px;
+      object-fit: cover;
       transition: transform 0.2s ease;
     }
 
@@ -77,13 +92,18 @@
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #edf6f9;
+      background-color: #003049;
+    }
+
+    footer img {
+      max-width: 100%;
+      height: auto;
     }
 
     footer small {
       display: block;
       margin-top: 1rem;
-      color: #555;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -91,10 +111,10 @@
 <body>
   <header>
     <nav>
-      <a href="index.html"><img alt="Logo" src="cocoa-logo_color.png" height="120"></a>
+      <a href="index.html"><img alt="Logo" src="cocoa-logo_color.png" class="logo-main"></a>
       <section>
         <figure>
-          <img alt="EU Logo" width="200" src="EN_Funded_by_the_European_Union_RGB_POS.png">
+          <img alt="EU Logo" src="EN_Funded_by_the_European_Union_RGB_POS.png">
         </figure>
       </section>
       <ul>
