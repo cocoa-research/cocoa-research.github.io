@@ -12,7 +12,7 @@
 
   <style>
     body {
-      background-color: #f0f4f8;
+      background-color: #f5f7fa;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
@@ -21,6 +21,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding-bottom: 1rem;
     }
 
     nav ul {
@@ -36,20 +37,29 @@
     nav ul li a {
       text-decoration: none;
       font-weight: bold;
-      color: #003049;
+      color: #264d9b;
     }
 
     nav ul li a:hover {
       text-decoration: underline;
     }
 
+    header .logo-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     header nav a img.logo-main {
-      height: 160px;
+      width: 100%;
+      max-width: 320px;
+      height: auto;
       margin-bottom: 0.5rem;
     }
 
     header nav section figure img {
-      width: 180px;
+      width: 160px;
+      margin-top: -0.5rem;
     }
 
     .team-grid {
@@ -80,19 +90,21 @@
     a.person-link img.people {
       border-radius: 12px;
       width: 100%;
-      height: 300px;
+      height: 360px;
       object-fit: cover;
+      object-position: top;
+      background-color: #e0e0e0;
       transition: transform 0.2s ease;
     }
 
     a.person-link:hover img.people {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #003049;
+      background-color: #1d3557;
     }
 
     footer img {
@@ -111,12 +123,14 @@
 <body>
   <header>
     <nav>
-      <a href="index.html"><img alt="Logo" src="cocoa-logo_color.png" class="logo-main"></a>
-      <section>
-        <figure>
-          <img alt="EU Logo" src="EN_Funded_by_the_European_Union_RGB_POS.png">
-        </figure>
-      </section>
+      <div class="logo-wrapper">
+        <a href="index.html"><img alt="Logo" src="cocoa-logo_color.png" class="logo-main"></a>
+        <section>
+          <figure>
+            <img alt="EU Logo" src="EN_Funded_by_the_European_Union_RGB_POS.png">
+          </figure>
+        </section>
+      </div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="people.html">Team</a></li>
