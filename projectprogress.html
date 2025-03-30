@@ -1,165 +1,165 @@
-<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="icon" href="https://via.placeholder.com/70x70">
-    <link rel="stylesheet" href="./mvp.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="COCOA Project Progress">
+  <title>Project Progress – COCOA</title>
 
-    <meta charset="utf-8">
-    <meta name="description" content="My description">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./mvp.css">
+  <link rel="icon" href="https://via.placeholder.com/70x70">
 
-    <title>COCOA</title>
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    header img.logo-main {
+      height: 250px;
+    }
+
+    .logo-wrapper figure img {
+      width: 250px;
+      margin-top: 1rem;
+    }
+
+    nav {
+      margin-top: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      padding: 0.25em 0.75em;
+      border-radius: 8px;
+    }
+
+    nav ul li a:hover {
+      text-shadow: 1px 1px 0 #ffd700, -1px 1px 0 #ffd700, 1px -1px 0 #ffd700, -1px -1px 0 #ffd700;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h2.section-heading {
+      text-align: center;
+      color: #2a72c4;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .video-sample, .group-photo, .methodology, .timeline {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .video-sample iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
+    }
+
+    .group-photo img, .methodology img, .timeline img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #0055a4;
+    }
+
+    footer img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 1rem;
+      color: #ffffff;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/"><img alt="Logo" src="cocoa-logo_color.png" height="250"></a>
-            <section>
-                <figure>
-                        <img alt="nextgenlogo" width="250" src="EN_Funded_by_the_European_Union_RGB_POS.png">
-                </figure>
-            </section>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="people.html">Team</a></li>
-                <li><a href="projectprogress.html">Project Progress</a></li>
-                <li><a href="results.html">Publications</a></li>
-                <li><a href="outreach.html">Research Dissemination</a></li>
-            </ul>
-        </nav>
-        <!--h1>Page Heading with <i>Italics</i> and <u>Underline</u></h1>
-        <p>Page Subheading with <mark>highlighting</mark></p>
-        <br>
-        <p><a href="#"><i>Italic Link Button</i></a><a href="#"><b>Bold Link Button &rarr;</b></a></p-->
-    </header>
-    <main>
-        <!--hr>
-        <section id="section-1">
-            <header>
-                <h2>Section Heading</h2>
-                <p>Section Subheading</p>
-            </header>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content*</p>
-                <p><small>*with small content</small></p>
-            </aside>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content <sup>with notification</sup></p>
-            </aside>
-            <aside>
-                <h3>Card heading</h3>
-                <p>Card content</p>
-            </aside>
-        </section>
-        <hr>
-        <section>
-            <blockquote>
-                "Quote"
-                <footer><i>- Attribution</i></footer>
-            </blockquote>
-        </section>
-        <hr>
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Col A</th>
-                        <th>Col B</th>
-                        <th>Col C</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>Row 1</td>
-                    <td>Cell A1</td>
-                    <td>Cell B1</td>
-                    <td>Cell C1</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>Cell A2</td>
-                    <td>Cell B2</td>
-                    <td>Cell C2</td>
-                </tr>
-            </table>
-        </section>
-        <hr-->
+  <header>
+    <a href="index.html"><img alt="Logo" src="cocoa-logo_color.png" class="logo-main"></a>
+    <div class="logo-wrapper">
+      <figure>
+        <img alt="EU Logo" src="EN_Funded_by_the_European_Union_RGB_POS.png">
+      </figure>
+    </div>
+  </header>
 
-        <article>
-            <h2>Project Progress</h2>
-            <!--aside>
-                <p>Article callout</p>
-            </aside-->
-       
-            <h3>
-                CoFI2024 Workshop <a href="https://cofi2024.github.io">https://cofi2024.github.io</a>
-                    
-                <figure>
-                        <img alt="ICMI" width="250" src="images/ICMIGroup.jpeg">
-                </figure>
-        
-            </h3>
-                Held in conjunction with the ICMI2024 ACM Conference,
-                the workshop aims to explore how interactive technology can enrich dining experiences
-                and to build an interdisciplinary community around the topics of related to commensality
-                and human-food interaction. A special focus is on the role of multimodal interaction
-                among commensal partners sharing food, being humans or artificial dining companions
-                (such as social robots).
-        </article>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="people.html">Team</a></li>
+      <li><a href="projectprogress.html">Project Progress</a></li>
+      <li><a href="results.html">Publications</a></li>
+      <li><a href="outreach.html">Research Dissemination</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <h2 class="section-heading">Internal Workshop – PRIN 2022 COCOA</h2>
 
+    <p style="text-align: center; font-style: italic;">9–12 December 2024, Genoa, Italy</p>
 
+    <p>The internal COCOA project workshop focused on preparing and executing the first robot–human commensality experiment. Core team members from Sapienza University and the University of Genoa gathered to define the experiment, integrate and test the platform, and begin data collection. The event included cross-project collaboration with PRIN 2022 VITA and featured participant-driven sessions involving real-time interaction with a social robot over shared meals.</p>
 
-        <!--hr>
-        <div>
-            <details>
-                <summary>Expandable title</summary>
-                <p>Revealed content</p>
-            </details>
-            <details>
-                <summary>Another expandable title</summary>
-                <p>More revealed content</p>
-            </details>
-            <br>
-            <p>Inline <code>code</code> snippets</p>
-            <pre>
-                <code>
-// preformatted code block
-                </code>
-            </pre>
-        </div>
-        <hr>
-        <section>
-            <form>
-                <header>
-                    <h2>Form title</h2>
-                </header>
-                <label for="input1">Input label:</label>
-                <input type="text" id="input1" name="input1" size="20" placeholder="Input1">
-                <label for="select1">Select label:</label>
-                <select id="select1">
-                    <option value="option1">option1</option>
-                    <option value="option2">option2</option>
-                </select>
-                <label for="textarea1">Textarea label:</label>
-                <textarea cols="40" rows="5" id="textarea1"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section-->
-    </main>
-    <footer>
-        <hr>
-        <section>
-            <img alt="nextgenlogo" width="450" src="signaturelogo.png">
-            <small>&copy; 2023-2025 MUR PRIN COCOA Project; Finanziato dall’Unione europea – Next Generation EU; Funded by the European Union – Next Generation EU</small>
-        </section>
-    </footer>
+    <div class="video-sample">
+      <h3>Workshop Preview Video</h3>
+      <p>This sample shows part of the experimental data collection conducted during the workshop.</p>
+      <iframe src="https://www.youtube.com/embed/ShNoyI5yDsI" allowfullscreen></iframe>
+    </div>
+
+    <div class="timeline">
+      <h3>Timeline Overview</h3>
+      <img src="images/timeline.png" alt="Timeline graphic">
+    </div>
+
+    <div class="methodology">
+      <h3>Experimental Methodology</h3>
+      <img src="images/methodology.png" alt="Methodology diagram">
+    </div>
+
+    <div class="group-photo">
+      <h3>Group Photo</h3>
+      <img src="images/groupdece.JPG" alt="COCOA team group photo">
+    </div>
+
+  </main>
+
+  <footer>
+    <img alt="EU Signature Logo" width="450" src="signaturelogo.png">
+    <small>&copy; 2023-2025 MUR PRIN COCOA Project; Finanziato dall’Unione europea – Next Generation EU; Funded by the European Union – Next Generation EU</small>
+  </footer>
 </body>
 
 </html>
+
