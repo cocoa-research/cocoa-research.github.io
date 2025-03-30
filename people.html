@@ -46,7 +46,7 @@
     nav ul li a {
       text-decoration: none;
       font-weight: bold;
-      color: #2a72c4;
+      color: #57a1dc;
     }
 
     nav ul li a:hover {
@@ -58,13 +58,19 @@
       margin-top: 2rem;
       font-size: 2.4rem;
       color: #2a72c4;
-      font-weight: 700;
+      font-weight: 600;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      letter-spacing: 0.7px;
-      text-transform: uppercase;
-      border-bottom: 2px solid #2a72c4;
-      display: inline-block;
-      padding-bottom: 0.4rem;
+      letter-spacing: 0.5px;
+      border-bottom: none;
+      text-transform: none;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .team-heading.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .team-grid {
@@ -163,7 +169,7 @@
       </a>
 
       <a href="https://orcid.org/0009-0000-5476-9403" target="_blank" class="person-link">
-        <img class="people" alt="Selim" src="images/Selim.jpg">
+        <img class="people" alt="Selim" src="images/Selim1.jpg">
         <h3>Selim Soufargi</h3>
         <p><strong>Department of Computer Science, Sapienza University of Rome</strong></p>
         <p>Selim Soufargi is a Ph.D. researcher in computer engineering. He obtained his Ph.D. degree from the university of Calabria, Rende, Italy. Prior to that, he obtained a master’s degree in communication systems from the university of Tunis-Manar. His main research interests focus on big data management, data analysis and machine learning. He has published papers at both national and international levels.</p>
@@ -182,6 +188,24 @@
     <img alt="EU Signature Logo" width="450" src="signaturelogo.png">
     <small>&copy; 2023-2025 MUR PRIN COCOA Project; Finanziato dall’Unione europea – Next Generation EU; Funded by the European Union – Next Generation EU</small>
   </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const heading = document.querySelector('.team-heading');
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            heading.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+    observer.observe(heading);
+  });
+</script>
 </body>
 
 </html>
+
